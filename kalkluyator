@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Seçin: ");
+        System.out.println("1. Toplama.");
+        System.out.println("2. Çıxma. ");
+        System.out.println("3. Vurma. ");
+        System.out.println("4. Bölmə. ");
+        int hesab = scanner.nextInt();
+        System.out.println("Ilk ədədi seçin: ");
+        double ilk = scanner.nextDouble();
+        System.out.println("Ikinci ədədi seçin: ");
+        double iki = scanner.nextDouble();
+        
+        
+        switch(hesab){
+            case 1:
+                System.out.print("Cavab: ");
+                System.out.println("ilk" + "+" + "ikinci" + "=" + (ilk + iki));
+                break;
+            case 2:
+                System.out.print("Cavab: ");
+                System.out.println("ilk" + "-" + "ikinci" + "=" + (ilk - iki));
+                break;
+            case 3:
+                System.out.print("Cavab: ");
+                System.out.println("ilk" + "*" + "iki" + "=" + (ilk*iki));
+                break;
+            case 4:
+                System.out.print("Cavab: ");
+                System.out.println("ilk" + "/" + "iki" + "=" + (ilk/iki));
+                break;
+            default:
+                System.out.println("Əməliyyat xətası. Yenidən yoxlayın!");
+        }
+    }
+}
